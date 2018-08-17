@@ -32,20 +32,12 @@ body{
 }
 
 ol{
-	position: fixed;
-	right: 0;
-	top:0;
 	list-style: none;
 }
 
 
-#fontWeight{
-	padding-right: 20px;
-	padding-left: 0;
-}
-
 .normal, .bold{
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 
@@ -54,28 +46,30 @@ ol{
 li{
 	width: 30px;
 	height: 30px;
-}
-
-li{
 	border: 2px solid #ccc;
-	display: inline-block;
 	border-radius: 50%;
 	transition: all 0.3s;
 	text-align: center;
 	vertical-align: middle;
-	font-weight: bold;
+	font-weight: bolder;
 	font-size: 15px;
 	cursor: pointer;
+	margin-left: 20px;
+	margin-bottom: 10px;
 }
-
-ol{
-	display: inline-block;
-}
-
-
 
 .colors{
-	margin-right: 100px;
+	padding:0; 
+	position: fixed;
+	left: 0;
+	top:60px;
+}
+
+.fontWeight{
+	padding: 0;
+	position: fixed;
+	left: 0;
+	top:236px;
 }
 
 .black{
