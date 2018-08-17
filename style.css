@@ -1,19 +1,101 @@
+.icon {
+   width: 2em; height: 2em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
 body{
 	margin: 0;
+	overflow: hidden;
 }
 
 #canvas{
 	background: #eee;
 }
 
-#pen{
+.action{
 	position: fixed;
-	bottom: 0;
-	left: 0;
+	top:20px;
+	left: 20px;
+	cursor: pointer;
 }
 
-#eraser{
-	position: fixed;
-	bottom: 0;
-	left: 50px;
+.action svg{
+	transition: all 0.3s;
+	padding: 3px;
+	margin: 0 5px;
 }
+
+.action svg.active{
+	fill:purple;
+}
+
+ol{
+	position: fixed;
+	right: 0;
+	top:0;
+	list-style: none;
+}
+
+
+#fontWeight{
+	padding-right: 20px;
+	padding-left: 0;
+}
+
+.normal, .bold{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+li{
+	width: 30px;
+	height: 30px;
+}
+
+li{
+	border: 2px solid #ccc;
+	display: inline-block;
+	border-radius: 50%;
+	transition: all 0.3s;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+ol{
+	display: inline-block;
+}
+
+
+
+.colors{
+	margin-right: 100px;
+}
+
+.black{
+	background: black;
+}
+
+.red{
+	background: red;
+}
+
+.green{
+	background: green;
+}
+
+.blue{
+	background: blue;
+}
+
+
+.active{
+	transform: scale(1.1);
+}
+
