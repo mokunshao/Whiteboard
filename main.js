@@ -42,7 +42,7 @@ function drawLine(x1,y1,x2,y2){
 
 
 
-// 允许创作
+// 是否正在创作
 var creating = false;
 
 
@@ -203,6 +203,7 @@ clear.onclick = function(){
 download.onclick = function(){
 	var url = canvas.toDataURL("image/png");
 	var a = document.createElement('a');
+	// document.body.appendChild(a)
 	a.download = '我的作品';
 	a.href = url;
 	a.target = '_blank';
