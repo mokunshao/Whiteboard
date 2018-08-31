@@ -71,7 +71,7 @@ eraser.onclick = function(){
 
 
 if(document.body.ontouchstart===null){
-	// 按下鼠标
+	// 按下手指
 	canvas.ontouchstart = function(point){
 		var x = point.touches[0].clientX;
 		var y = point.touches[0].clientY;
@@ -84,7 +84,7 @@ if(document.body.ontouchstart===null){
 			context.clearRect(x,y,10,10)
 		}
 	}
-	// 鼠标移动
+	// 手指移动
 	canvas.ontouchmove = function(point){
 		var x = point.touches[0].clientX;
 		var y = point.touches[0].clientY;
@@ -101,7 +101,7 @@ if(document.body.ontouchstart===null){
 			lastPoint = newPoint;
 		}
 	}
-	//松开鼠标
+	//松开手指
 	canvas.ontouchend = function(point){
 		creating = false;
 	}
