@@ -11,7 +11,7 @@ body{
 }
 
 #canvas{
-	background: #eee;
+	background: white;
 }
 
 .action{
@@ -19,6 +19,7 @@ body{
 	top:20px;
 	left: 20px;
 	cursor: pointer;
+	user-select: none;
 }
 
 .action svg{
